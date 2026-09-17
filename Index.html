@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechZone | Gadget Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("current-page");
+        }
+    });
+});
+</script>    
+
+
+
+<header class="navbar">
+    <div class="nav-inner">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">⚡</span>
+            <span>TechZone</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="audio.html">Audio</a>
+            <a href="smartwatches.html">Wearables</a>
+            <a href="gaming.html">Gaming</a>
+        </nav>
+</div>
+</header>
+
+
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            🚀 NEW GENERATION TECH
+        </span>
+
+        <h1>
+            Upgrade Your
+            <span>Digital Life.</span>
+        </h1>
+
+        <p>
+            Discover the latest smartphones, laptops, audio devices,
+            smartwatches and gaming accessories at TechZone.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#categories" class="primary-btn">
+                Explore Products →
+            </a>
+
+            <a href="#offers" class="secondary-btn">
+                View Offers
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <div class="hero-circle"></div>
+
+        <img src="images/6.avif"
+             alt="Modern Smartphone">
+
+    </div>
+
+</section>
+
+
+
+
+<section class="section" id="categories">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="small-title">SHOP BY CATEGORY</span>
+
+            <h2>
+                Find Your Perfect
+                <span>Gadget</span>
+            </h2>
+        </div>
+
+        <p>
+            Explore our collection of modern technology
+            designed for work, entertainment and everyday life.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <a href="smartphones.html" class="category-card">
+
+            <div class="category-image">
+                <img src="images/3.avif"
+                     alt="Smartphones">
+            </div>
+
+            <div class="category-info">
+                <h3>Smartphones</h3>
+                <p>Latest mobile technology</p>
+                <span>Explore →</span>
+            </div>
+
+        </a>
+
+
+        <a href="laptops.html" class="category-card">
+
+            <div class="category-image">
+                <img src="images/5.avif"
+                     alt="Laptops">
+            </div>
+
+            <div class="category-info">
+                <h3>Laptops</h3>
+                <p>Powerful devices for work</p>
+                <span>Explore →</span>
+            </div>
+
+        </a>
+
+
+        <a href="audio.html" class="category-card">
+
+            <div class="category-image">
+                <img src="images/4.avif"
+                     alt="Headphones">
+            </div>
+
+            <div class="category-info">
+                <h3>Audio & Headphones</h3>
+                <p>Immersive sound experience</p>
+                <span>Explore →</span>
+            </div>
+
+        </a>
+
+
+        <a href="smartwatches.html" class="category-card">
+
+            <div class="category-image">
+                <img src="images/2.avif"
+                     alt="Smartwatch">
+            </div>
+
+            <div class="category-info">
+                <h3>Smartwatches</h3>
+                <p>Smart wearable technology</p>
+                <span>Explore →</span>
+            </div>
+
+        </a>
+
+
+        <a href="gaming.html" class="category-card">
+
+            <div class="category-image">
+                <img src="images/1.avif"
+                     alt="Gaming">
+            </div>
+
+            <div class="category-info">
+                <h3>Gaming Accessories</h3>
+                <p>Level up your gaming</p>
+                <span>Explore →</span>
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="offers" id="offers">
+
+    <div class="offer-content">
+
+        <span class="small-title">
+            LIMITED TIME OFFER
+        </span>
+
+        <h2>
+            Upgrade Your Setup
+            <br>
+            <span>Save More.</span>
+        </h2>
+
+        <p>
+            Get special discounts on selected gadgets
+            while stocks last.
+        </p>
+
+        <a href="smartphones.html" class="primary-btn">
+            Shop Offers →
+        </a>
+
+    </div>
+
+    <div class="discount-box">
+
+        <strong>20%</strong>
+        <span>OFF</span>
+
+    </div>
+
+</section>
+
+
+
+
+<section class="section" id="new-arrivals">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="small-title">
+                JUST ARRIVED
+            </span>
+
+            <h2>
+                New <span>Arrivals</span>
+            </h2>
+        </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        NEW
+                    </span>
+
+                    <img
+                        src="images/images (1).jpg"
+                        alt="Apple iPhone 17 Pro Max"
+                    >
+
+                </div>
+
+            <div class="product-info">
+
+                <small>SMARTPHONE</small>
+
+                <h3>iPhone 17 Pro Max</h3>
+
+                <p>
+                    Apple's premium flagship with the powerful A19 Pro
+                        chip, 6.9-inch Super Retina XDR display and advanced
+                        camera system for photography and video.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>Rs. 493,714</strong>
+
+                    <span class="available">
+                        ● In Stock
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">NEW</span>
+
+                <img
+                src="images/images (9).jpg"
+                alt="MacBook Air M5">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>LAPTOP</small>
+
+                <h3>MacBook Air M5</h3>
+
+                <p>
+                    Slim and powerful laptop powered by Apple's M5 chip,
+                    designed for productivity, study and creative work.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>Rs. 417,131</strong>
+
+                    <span class="available">
+                        ● In Stock
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">
+                    NEW
+                </span>
+
+                <img src="images/Sony WH-1000XM6.jpg"
+                     alt="Headphones">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>AUDIO</small>
+
+                <h3>Sony WH-1000XM6</h3>
+
+                <p>
+                    Premium wireless headphones with advanced noise
+                    cancellation and high-quality sound for travel and music.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>Rs. 109,703</strong>
+
+                    <span class="available">
+                        ● In Stock
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<footer>
+
+    <div class="footer-main">
+
+        <div>
+            <a href="index.html" class="logo">
+                <span>⚡</span> TechZone
+            </a>
+
+            <p>
+                Your destination for modern technology,
+                smart gadgets and digital accessories.
+            </p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#offers">Offers</a>
+        </div>
+
+        <div>
+            <h4>Categories</h4>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="audio.html">Audio</a>
+            <a href="smartwatches.html">Smartwatches</a>
+            <a href="gaming.html">Gaming</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 TechZone Gadget Store. All Rights Reserved.
+    </div>
+
+</footer>
+</body>
+</html>

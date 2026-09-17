@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smartwatches | TechZone</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("current-page");
+        }
+    });
+});
+</script>
+
+<script>
+    // Load saved theme before the page is displayed
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+    }
+
+    // Dark mode button
+    const themeButton = document.querySelector(".theme-btn");
+
+    if (themeButton) {
+        themeButton.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark");
+
+            if (document.body.classList.contains("dark")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+
+        });
+    }
+</script>
+
+
+<header class="navbar">
+    <div class="nav-inner">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">⚡</span>
+            <span>TechZone</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="audio.html">Audio</a>
+            <a href="smartwatches.html">Wearables</a>
+            <a href="gaming.html">Gaming</a>
+        </nav>
+</div>
+</header>
+
+
+<section class="page-header">
+
+<div class="page-header-content">
+
+<span class="section-tag">⌚ SMART WEARABLES</span>
+
+<h1>
+Smart <span>Watches</span>
+</h1>
+
+<p>
+Stay connected, track your fitness and manage your
+daily life directly from your wrist.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="section-heading">
+
+<div>
+
+<span class="section-tag">WEARABLE COLLECTION</span>
+
+<h2>Top Smartwatches</h2>
+
+<p>
+Explore premium smartwatches for fitness,
+productivity and everyday use.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="product-grid">
+
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<span class="badge">ULTRA</span>
+
+<img
+src="images/Apple Watch Ultra 3.jpg"
+alt="Apple Watch Ultra 3">
+
+</div>
+
+<div class="product-info">
+
+<small>APPLE</small>
+
+<h3>Apple Watch Ultra 3</h3>
+
+<p>
+Premium titanium smartwatch with a bright display,
+multiday battery life and GPS + Cellular connectivity.
+</p>
+
+<div class="product-specs">
+<span>🍎 watchOS 26</span>
+<span>📡 GPS + Cellular</span>
+<span>🔋 Multiday Battery</span>
+</div>
+
+<div class="product-bottom">
+
+<strong>From Rs. 259,000</strong>
+
+<span class="available out">
+● Out of Stock
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<span class="badge">NEW</span>
+
+<img
+src="images/Apple Watch Series 11.jpg"
+alt="Apple Watch Series 11">
+
+</div>
+
+<div class="product-info">
+
+<small>APPLE</small>
+
+<h3>Apple Watch Series 11</h3>
+
+<p>
+Modern Apple smartwatch with fitness tracking,
+GPS and advanced health-related features.
+</p>
+
+<div class="product-specs">
+<span>🍎 S10 Chip</span>
+<span>📍 GPS</span>
+<span>💧 Water Resistant</span>
+</div>
+
+<div class="product-bottom">
+
+<strong>From Rs. 118,500</strong>
+
+<span class="available">
+● Available
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<span class="badge">SAMSUNG</span>
+
+<img
+src="images/Galaxy Watch 9.jpg"
+alt="Samsung Galaxy Watch 9">
+
+</div>
+
+<div class="product-info">
+
+<small>SAMSUNG</small>
+
+<h3>Galaxy Watch 9</h3>
+
+<p>
+Advanced Samsung smartwatch with AMOLED display,
+fitness tracking and Galaxy AI-powered features.
+</p>
+
+<div class="product-specs">
+<span>⌚ Super AMOLED</span>
+<span>❤️ Health Tracking</span>
+<span>🏃 100+ Workouts</span>
+</div>
+
+<div class="product-bottom">
+
+<strong>From Rs. 103,000</strong>
+
+<span class="available">
+● Pre-Order
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<span class="badge">GOOGLE</span>
+
+<img
+src="images/Pixel Watch 4.jpg"
+alt="Google Pixel Watch 4">
+
+</div>
+
+<div class="product-info">
+
+<small>GOOGLE</small>
+
+<h3>Pixel Watch 4</h3>
+
+<p>
+Google smartwatch with Fitbit fitness insights,
+Gemini AI assistance and a bright AMOLED display.
+</p>
+
+<div class="product-specs">
+<span>🤖 Gemini AI</span>
+<span>🏃 Fitbit</span>
+<span>🔋 Up to 40H</span>
+</div>
+
+<div class="product-bottom">
+
+<strong>From Rs. 116,500</strong>
+
+<span class="available out">
+● Out of Stock
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<span class="badge">FITNESS</span>
+
+<img
+src="images/Garmin Venu 4.jpg"
+alt="Garmin Venu 4">
+
+</div>
+
+<div class="product-info">
+
+<small>GARMIN</small>
+
+<h3>Garmin Venu 4</h3>
+
+<p>
+Premium fitness GPS smartwatch with AMOLED display,
+vitals tracking, sleep coaching and built-in flashlight.
+</p>
+
+<div class="product-specs">
+<span>🏃 GPS Fitness</span>
+<span>💡 LED Flashlight</span>
+<span>💧 Water Resistant</span>
+</div>
+
+<div class="product-bottom">
+
+<strong>From Rs. 166,900</strong>
+
+<span class="available">
+● Pre-Order
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<span class="badge">FITNESS</span>
+
+<img
+src="images/Amazfit Active 2.jpg"
+alt="Amazfit Active 2">
+
+</div>
+
+<div class="product-info">
+
+<small>AMAZFIT</small>
+
+<h3>Amazfit Active 2</h3>
+
+<p>
+Stylish AMOLED smartwatch with health tracking,
+160+ workout modes and long battery life.
+</p>
+
+<div class="product-specs">
+<span>🖥️ AMOLED</span>
+<span>🏋️ 160+ Workouts</span>
+<span>🔋 Up to 10 Days</span>
+</div>
+
+<div class="product-bottom">
+
+<strong>Rs. 53,600</strong>
+
+<span class="available out">
+● Out of Stock
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+
+<div class="footer-content">
+
+<div>
+
+<a href="index.html" class="logo">
+<span>⚡</span> TechZone
+</a>
+
+<p>
+Your modern destination for premium gadgets
+and technology.
+</p>
+
+</div>
+
+<div>
+
+<h4>Quick Links</h4>
+
+<a href="index.html">Home</a>
+<a href="smartphones.html">Smartphones</a>
+<a href="laptops.html">Laptops</a>
+
+</div>
+
+<div>
+
+<h4>Categories</h4>
+
+<a href="audio.html">Audio</a>
+<a href="smartwatches.html">Wearables</a>
+<a href="gaming.html">Gaming</a>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 TechZone Gadget Store. All Rights Reserved.</p>
+
+</div>
+
+</footer>
+</body>
+</html>

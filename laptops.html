@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops | TechZone Gadget Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("current-page");
+        }
+    });
+});
+</script>
+
+<header class="navbar">
+    <div class="nav-inner">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">⚡</span>
+            <span>TechZone</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="audio.html">Audio</a>
+            <a href="smartwatches.html">Wearables</a>
+            <a href="gaming.html">Gaming</a>
+        </nav>
+</div>
+</header>
+
+
+<section class="page-header">
+
+    <div class="page-header-content">
+
+        <span class="section-tag">💻 PREMIUM COLLECTION</span>
+
+        <h1>
+            Latest <span>Laptops</span>
+        </h1>
+
+        <p>
+            Powerful laptops for study, business, creativity,
+            gaming and professional work.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-tag">OUR COLLECTION</span>
+
+            <h2>Top Laptops</h2>
+
+            <p>
+                Explore our latest premium and performance laptops.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">NEW</span>
+
+                <img
+                src="images/images (9).jpg"
+                alt="MacBook Air M5">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>APPLE</small>
+
+                <h3>MacBook Air M5</h3>
+
+                <p>
+                    Slim and powerful laptop powered by Apple's M5 chip,
+                    designed for productivity, study and creative work.
+                </p>
+
+                <div class="product-specs">
+                    <span>⚡ Apple M5</span>
+                    <span>💾 16GB • 512GB</span>
+                    <span>🖥️ 13.6" Retina</span>
+                </div>
+
+                <div class="product-bottom">
+                    <strong>Rs. 417,131</strong>
+                    <span class="available ">●  Available</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">PRO</span>
+
+                <img
+                src="images/images (10).jpg"
+                alt="MacBook Pro M5">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>APPLE</small>
+
+                <h3>MacBook Pro M5</h3>
+
+                <p>
+                    Professional MacBook with M5 performance,
+                    Liquid Retina XDR display and high-speed storage.
+                </p>
+
+                <div class="product-specs">
+                    <span>⚡ Apple M5</span>
+                    <span>💾 16GB • 512GB</span>
+                    <span>🖥️ 14" XDR</span>
+                </div>
+
+                <div class="product-bottom">
+                    <strong>Rs. 622,857</strong>
+                    <span class="available out">● Out of Stock</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">AI LAPTOP</span>
+
+                <img
+                src="images/HP OmniBook X Flip 14.jpg"
+                alt="HP OmniBook X Flip">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>HP</small>
+
+                <h3>HP OmniBook X Flip 14</h3>
+
+                <p>
+                    Flexible 2-in-1 laptop with touchscreen,
+                    Intel Core Ultra processor and AI-ready performance.
+                </p>
+
+                <div class="product-specs">
+                    <span>⚡ Core Ultra 5</span>
+                    <span>💾 16GB • 512GB</span>
+                    <span>🖥️ 14" 2K Touch</span>
+                </div>
+
+                <div class="product-bottom">
+                    <strong>Rs. 388,571</strong>
+                    <span class="available">● Available</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">GAMING</span>
+
+                <img
+                src="images/HP Victus 15.avif"
+                alt="HP Victus Gaming Laptop">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>HP</small>
+
+                <h3>HP Victus 15 Gaming</h3>
+
+                <p>
+                    Gaming laptop with RTX 4050 graphics,
+                    high-refresh display and strong everyday performance.
+                </p>
+
+                <div class="product-specs">
+                    <span>🎮 RTX 4050</span>
+                    <span>⚡ Core i5</span>
+                    <span>💾 16GB • 512GB</span>
+                </div>
+
+                <div class="product-bottom">
+                    <strong>Rs. 355,000</strong>
+                    <span class="available">● Available</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">OLED</span>
+
+                <img
+                src="images/ASUS Vivobook S16.jpg"
+                alt="ASUS Vivobook S">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>ASUS</small>
+
+                <h3>ASUS Vivobook S16</h3>
+
+                <p>
+                    Premium productivity laptop featuring an OLED display,
+                    powerful Core Ultra processor and 1TB storage.
+                </p>
+
+                <div class="product-specs">
+                    <span>⚡ Core Ultra 9</span>
+                    <span>💾 16GB • 1TB</span>
+                    <span>🖥️ 16" OLED</span>
+                </div>
+
+                <div class="product-bottom">
+                    <strong>Rs. 499,990</strong>
+                    <span class="available">● Available</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <span class="badge">EXTREME GAMING</span>
+
+                <img
+                src="images/ROG Strix G614P.jpg"
+                alt="ASUS ROG Strix">
+
+            </div>
+
+            <div class="product-info">
+
+                <small>ASUS ROG</small>
+
+                <h3>ROG Strix G614P</h3>
+
+                <p>
+                    High-performance gaming laptop with Ryzen 9,
+                    RTX 5070 graphics and 1TB high-speed SSD.
+                </p>
+
+                <div class="product-specs">
+                    <span>🎮 RTX 5070</span>
+                    <span>⚡ Ryzen 9</span>
+                    <span>💾 16GB • 1TB</span>
+                </div>
+
+                <div class="product-bottom">
+                    <strong>Rs. 689,999</strong>
+                    <span class="available">● Available</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+            <a href="index.html" class="logo">
+                <span>⚡</span> TechZone
+            </a>
+
+            <p>
+                Your modern destination for premium gadgets
+                and technology.
+            </p>
+        </div>
+
+        <div>
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="laptops.html">Laptops</a>
+        </div>
+
+        <div>
+            <h4>Categories</h4>
+            <a href="audio.html">Audio</a>
+            <a href="smartwatches.html">Wearables</a>
+            <a href="gaming.html">Gaming</a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 TechZone Gadget Store. All Rights Reserved.</p>
+    </div>
+
+</footer>
+</body>
+</html>

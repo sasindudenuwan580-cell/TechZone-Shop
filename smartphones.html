@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smartphones | TechZone Gadget Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+        const linkPage = link.getAttribute("href").split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("current-page");
+        }
+    });
+});
+</script>    
+
+<script>
+    // Load saved theme before the page is displayed
+    if (localStorage.getItem("theme") === "dark") {
+        document.body.classList.add("dark");
+    }
+
+    // Dark mode button
+    const themeButton = document.querySelector(".theme-btn");
+
+    if (themeButton) {
+        themeButton.addEventListener("click", function () {
+
+            document.body.classList.toggle("dark");
+
+            if (document.body.classList.contains("dark")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+
+        });
+    }
+</script>
+
+    
+   <header class="navbar">
+    <div class="nav-inner">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">⚡</span>
+            <span>TechZone</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="smartphones.html">Smartphones</a>
+            <a href="laptops.html">Laptops</a>
+            <a href="audio.html">Audio</a>
+            <a href="smartwatches.html">Wearables</a>
+            <a href="gaming.html">Gaming</a>
+        </nav>
+</div>
+</header>
+
+
+    
+    <section class="page-header">
+
+        <div class="page-header-content">
+
+            <span class="section-tag">
+                📱 PREMIUM COLLECTION
+            </span>
+
+            <h1>
+                Latest <span>Flagship Smartphones</span>
+            </h1>
+
+            <p>
+                Discover the latest high-performance smartphones with
+                powerful processors, advanced cameras and premium displays.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    
+    <section class="section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-tag">OUR COLLECTION</span>
+
+                <h2>
+                    Top Smartphones
+                </h2>
+
+                <p>
+                    Explore our latest flagship smartphone collection.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="product-grid">
+
+
+            
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        NEW
+                    </span>
+
+                    <img
+                        src="images/images.jpg"
+                        alt="Samsung Galaxy S26 Ultra"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>
+                        SAMSUNG
+                    </small>
+
+                    <h3>
+                        Samsung Galaxy S26 Ultra
+                    </h3>
+
+                    <p>
+                        Premium flagship featuring a 6.9-inch Dynamic AMOLED
+                        display, Snapdragon 8 Elite Gen 5 processor and
+                        advanced 200MP camera system.
+                    </p>
+
+
+                    <div class="product-specs">
+
+                        <span>⚡ Snapdragon 8 Elite Gen 5</span>
+                        <span>📸 200MP Camera</span>
+                        <span>💾 12GB RAM • 256GB</span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 309,990
+                        </strong>
+
+                        <span class="available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        PREMIUM
+                    </span>
+
+                    <img
+                        src="images/images (1).jpg"
+                        alt="Apple iPhone 17 Pro Max"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>
+                        APPLE
+                    </small>
+
+                    <h3>
+                        iPhone 17 Pro Max
+                    </h3>
+
+                    <p>
+                        Apple's premium flagship with the powerful A19 Pro
+                        chip, 6.9-inch Super Retina XDR display and advanced
+                        camera system for photography and video.
+                    </p>
+
+
+                    <div class="product-specs">
+
+                        <span>⚡ Apple A19 Pro</span>
+                        <span>📸 Pro Camera System</span>
+                        <span>💾 12GB RAM • 256GB</span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 493,714
+                        </strong>
+
+                        <span class="available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        AI FLAGSHIP
+                    </span>
+
+                    <img
+                        src="images/images (3).jpg"
+                        alt="Google Pixel 10 Pro XL"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>
+                        GOOGLE
+                    </small>
+
+                    <h3>
+                        Google Pixel 10 Pro XL
+                    </h3>
+
+                    <p>
+                        AI-focused flagship powered by Google Tensor G5,
+                        featuring an advanced camera system, 6.8-inch LTPO
+                        OLED display and intelligent Google AI features.
+                    </p>
+
+
+                    <div class="product-specs">
+
+                        <span>🤖 Google Tensor G5</span>
+                        <span>📸 Triple Camera</span>
+                        <span>💾 16GB RAM • 256GB</span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 360,000
+                        </strong>
+
+                        <span class="available">
+                            ● Available
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        PERFORMANCE
+                    </span>
+
+                    <img
+                        src="images/images (6).jpg"
+                        alt="OnePlus 15"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>
+                        ONEPLUS
+                    </small>
+
+                    <h3>
+                        OnePlus 15 5G
+                    </h3>
+
+                    <p>
+                        High-performance flagship designed for gaming and
+                        multitasking with a 165Hz display, Snapdragon 8 Elite
+                        Gen 5 and a huge 7300mAh battery.
+                    </p>
+
+
+                    <div class="product-specs">
+
+                        <span>⚡ Snapdragon 8 Elite Gen 5</span>
+                        <span>🎮 165Hz Display</span>
+                        <span>🔋 7300mAh Battery</span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 304,000
+                        </strong>
+
+                        <span class="available out">
+                            ● Out of Stock
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        CAMERA PRO
+                    </span>
+
+                    <img
+                        src="images/images (7).jpg"
+                        alt="Xiaomi 17 Ultra"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>
+                        XIAOMI
+                    </small>
+
+                    <h3>
+                        Xiaomi 17 Ultra 5G
+                    </h3>
+
+                    <p>
+                        Professional imaging flagship featuring Leica camera
+                        technology, Snapdragon 8 Elite Gen 5 processor and
+                        512GB high-speed storage.
+                    </p>
+
+
+                    <div class="product-specs">
+
+                        <span>📸 Leica Camera</span>
+                        <span>⚡ Snapdragon 8 Elite Gen 5</span>
+                        <span>💾 16GB RAM • 512GB</span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 456,571
+                        </strong>
+
+                        <span class="available">
+                            ● 1 In Stock
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <span class="badge">
+                        CAMERA FLAGSHIP
+                    </span>
+
+                    <img
+                        src="images/images (8).jpg"
+                        alt="Vivo X300 Pro"
+                    >
+
+                </div>
+
+
+                <div class="product-info">
+
+                    <small>
+                        VIVO
+                    </small>
+
+                    <h3>
+                        Vivo X300 Pro 5G
+                    </h3>
+
+                    <p>
+                        Camera-focused flagship with a 200MP ZEISS telephoto
+                        camera, Dimensity 9500 processor and a large 6510mAh
+                        battery.
+                    </p>
+
+
+                    <div class="product-specs">
+
+                        <span>📸 200MP ZEISS Telephoto</span>
+                        <span>⚡ Dimensity 9500</span>
+                        <span>💾 16GB RAM • 512GB</span>
+
+                    </div>
+
+
+                    <div class="product-bottom">
+
+                        <strong>
+                            Rs. 491,417
+                        </strong>
+
+                        <span class="available out">
+                            ● Out of Stock
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    
+    <section class="section">
+
+        <div class="offer-box">
+
+            <div>
+
+                <span class="section-tag">
+                    TECHZONE PROMISE
+                </span>
+
+                <h2>
+                    Find the right smartphone for you.
+                </h2>
+
+                <p>
+                    Compare flagship performance, camera technology,
+                    battery life and storage before choosing your next
+                    smartphone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    <span>⚡</span> TechZone
+                </a>
+
+                <p>
+                    Your modern destination for premium gadgets
+                    and technology.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="smartphones.html">
+                    Smartphones
+                </a>
+
+                <a href="laptops.html">
+                    Laptops
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Categories
+                </h4>
+
+                <a href="audio.html">
+                    Audio
+                </a>
+
+                <a href="smartwatches.html">
+                    Wearables
+                </a>
+
+                <a href="gaming.html">
+                    Gaming
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TechZone Gadget Store. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+</body>
+</html>
